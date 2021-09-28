@@ -8,14 +8,9 @@ export default class ContaCorrente extends Conta {
         ContaCorrente.numeroDeContas++;
     }
 
+    //sobreescrevendo o comportamento de sacar
     sacar(valor) {
         let taxa = 1.05;
-        valor *= taxa
-        if (this._saldo >= valor) {
-            this._saldo -= valor;
-            return valor;
-        } else {
-            return 0;
-        }
+        super._sacar(valor, taxa);
     }
 }
