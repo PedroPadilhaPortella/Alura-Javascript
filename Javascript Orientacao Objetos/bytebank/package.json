@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "contas": "node contas.js",
+    "funcionarios": "node funcionarios.js"
   },
   "author": "pedro portella",
   "license": "ISC"

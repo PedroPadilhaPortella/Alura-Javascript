@@ -1,7 +1,12 @@
-import Cliente from "./Cliente.js";
+import Cliente from "../Cliente.js";
 
+// Classe Abstrata (não tem essa opção no javascript)
 export default class Conta {
     constructor(saldoInicial, cliente, agencia) {
+        if(this.construtor == Conta) { 
+            throw new Error("You must not instantiate Conta class directly beacause it's as abstract class")
+        }
+
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
@@ -13,6 +18,7 @@ export default class Conta {
 
     set cliente(cliente) { if (cliente instanceof Cliente) this._cliente = cliente }
     
+    // metodo abstrato
     sacar(valor) {
         let taxa = 1;
         return this._sacar(valor, taxa);
@@ -29,7 +35,7 @@ export default class Conta {
     }
 
     depositar(valor) {
-        if (valor <= 0) { return; }
+        if (valor <= 0) { return }
         this._saldo += valor
     }
 

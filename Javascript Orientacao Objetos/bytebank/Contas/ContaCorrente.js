@@ -11,6 +11,6 @@ export default class ContaCorrente extends Conta {
     //sobreescrevendo o comportamento de sacar
     sacar(valor) {
         let taxa = 1.05;
-        super._sacar(valor, taxa);
+        return super._sacar(valor, taxa);
     }
 }
