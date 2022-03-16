@@ -1,3 +1,5 @@
+https://medium.com/xp-inc/regex-um-guia-pratico-para-express%C3%B5es-regulares-1ac5fa4dd39f
+
 cpf com . e - opcionais, como em 405.751.068-08, 40575106808 ou 405.751.068.08
 
 \d{3}\.?\d{3}\.?\d{3}[-.]?\d{2}
@@ -70,3 +72,12 @@ O limite é de 10 caracteres;
 O primeiro caractere deve ser uma letra do alfabeto, não pode ser um número;
 A partir do segundo caractere podemos ter letras maiúsculas, minúsculas e números;
 @Pattern(regexp="[a-zA-Z][a-zA-Z0-9]{0,9}")
+
+
+
+Word boundary - Âncoras
+denise teste, 987.654.321-00,28 de Dezembro de 1991,(31)45562712,SCS Qd. 8 Bl. B-50,11,70333-900,Rio Grande
+\bde\b
+
+aaa aaaa aaa aaaa aaa
+\ba{3}\b
