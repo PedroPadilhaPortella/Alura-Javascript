@@ -1,3 +1,0 @@
-A partir dos pontos levantados anteriormente, pode-se concluir que há um conjunto de fatores que justificam a preservação e investimentos em manutenção de patrimônios históricos, incluindo o fortalescimento do turismo local, a retificação da estética dos centros urbanos e a perpetuação ods patrim^nios, tanto os de caráter material, quanto os de caráter imaterial, histórico, natural ou intelectual.
-
-Em vista disso, o processo de Gentrificação é algo essencial para que haja o desenvolvimento urbano, pois cria uma conexão por meio dos patrim^nios históricos, sem que sejam perdidas as raízes.
