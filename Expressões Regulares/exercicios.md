@@ -53,6 +53,11 @@ Para descrever o mês, devemos usar uma nova classe de letras, seguem alguns exe
 
 \w significa word char e é uma atalho para [A-Za-z0-9_]
 
+### Grupos
+Podemos definir grupos, colocando entre ( )
+
+Non-Capturing group: (?: ) (não deve devolver o grupo)
+
 # Exercícios
 
 ### Encontrando o CNPJ
@@ -146,3 +151,10 @@ Expressão:
 
 Expressão:
 ``
+
+### Código Secreto
+Crie uma Regex que evidencie as letras da mensagem, a regra é que cada letra é precedida por uma letra Z seguida de 1 ou mais algarismos.
+> Z171PZ7AZ23PZ7819AZ78GZ1AZ99IZ34O
+
+Expressão:  
+`(:?Z\d+)`
