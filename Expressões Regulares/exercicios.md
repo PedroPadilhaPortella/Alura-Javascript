@@ -172,10 +172,25 @@ Expressão:
 `<(h1|h2).+?>([\w\sõãí.]+)<\/\1>`
 
 
-### Código Secreto
+## Código Secreto
 Crie uma Regex que evidencie as letras da mensagem, a regra é que cada letra é precedida por uma letra Z seguida de 1 ou mais algarismos.
 > Z171PZ7AZ23PZ7819AZ78GZ1AZ99IZ34O
 
 Expressão:  
 `(:?Z\d+)`
 `[^Z\d]`
+
+## Validação de Senhas
+Crie uma expressão que valide senhas, onde a senha precisa ter mais de 8 caracteres e conter ao menos uma letra maiúscula, um caractere especial ($ * & @ #) e um algarismo, no mínimo.
+
+
+Expressão:  
+`^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$`
+
+> /^  
+  (?=.*\d)              // deve conter ao menos um dígito 
+  (?=.*[a-z])           // deve conter ao menos uma letra minúscula  
+  (?=.*[A-Z])           // deve conter ao menos uma letra maiúscula  
+  (?=.*[$*&@#])         // deve conter ao menos um caractere especial  
+  [0-9a-zA-Z$*&@#]{8,}  // deve conter ao menos 8 dos caracteres mencionados  
+$/
